@@ -40,7 +40,7 @@ Guidance for filling personal information:
 | --------------- | --------- | ------------------------------------------------------------ |
 | username        | string    | student ID                                                   |
 | at_school       | bool      | if you're at school                                          |
-| at_shanghai     | string    | options: "在沪"(in Shanghai), "在湖北"(in Hubei province), "在其它地区"(in other locations) |
+| at_shanghai     | string    | options: "在沪"(in Shanghai), "在中高风险地区"(in median- or high-risk locations), "在其它地区"(in other locations) |
 | ad_code         | string    | the first 4 digits of China administrative division code (different from postal code).<br />Quick check: Shanghai "3101", your hometown as the first 4 digits of citizenship ID.<br />For more details: http://preview.www.mca.gov.cn/article/sj/xzqh/2020/2020/202101041104.html |
 | covid_patient   | int       | options, 0 (health), 1 (suspected covid patient), 2 (covid patient). |
 | teacher_id      | string    | ID of your instructor in SLU<br />Notes: You can check it in WeCom (Wechat Work / WXWork) contact. |
