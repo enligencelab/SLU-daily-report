@@ -107,16 +107,17 @@ class DailyReport:
         process_def_id = pir_bs_tree.find("input", id="processDefId", type="hidden").attrs['value']
 
         form_data = {
-            "ZHBNOW": "0", "ZHB": "0", "MQJC": "0", "SWBZ": "", "XWBZ": "", "BZ": "",
-            "ISSAME": "", "SORTNUM": "29", "XW_TJTW": "", "SW_TJTW": "", "SF": self.postal_code,
+            "ZHBNOW": "0", "ZHB": "0", "MQJC": "0", "KZZD": None, "SWBZ": "", "XWBZ": "", "BZ": "",
+            "ISSAME": "", "SORTNUM": "29", "XW_TJTW": "", "XW_XWTW": None, "SW_TJTW": "", "SWTW": None,
+            "SFZX": None, "SFCS": None, "SF": self.postal_code, "ZGFXDQSF": None, "DQJZS": None,
             "STZK": self.health, "BSRQ": date.today().__str__(), "ROLE": "学生", "FDY": self.teacher_id,
             "BJ": self.class_name, "BM": self.school_name, "XM": self.name, "GH": self.username, "ISREPORT": "0",
         }
 
         old_form_data = {
-            "ZHBNOW": "0", "ZHB": "0", "MQJC": "0", "SWBZ": "", "XWBZ": "", "BZ": "",
+            "ZHBNOW": "0", "ZHB": "0", "MQJC": "0", "KZZD": None, "SWBZ": "", "XWBZ": "", "BZ": "",
             "ISSAME": "", "SORTNUM": "29", "XW_TJTW": "", "XW_XWTW": "", "SW_TJTW": "", "SWTW": "",
-            "SF": "", "STZK": "",
+            "SFZX": None, "SFCS": None, "SF": "", "ZGFXDQSF": None, "DQJZS": None, "STZK": "",
             "BSRQ": date.today().__str__(), "ROLE": "学生", "FDY": self.teacher_id, "BJ": self.class_name,
             "BM": self.school_name,
             "XM": self.name, "GH": self.username, "ISREPORT": "0"
@@ -174,6 +175,7 @@ class DailyReport:
             "currentPage": "1",
             "formDefId": form_def_id,
             "formData": str(form_data),
+            # location for boId, boDefId
             "oldFormData": str(old_form_data),
             "isCreate": "true",
             "commentInfo": {
