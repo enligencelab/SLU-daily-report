@@ -11,28 +11,24 @@
 
 The university requires students and teachers to report their health conditions, locations and other information daily. Since it is at low efficiency to report manually everyday, I develop a script to automatically complete the task.
 
-## Usage
+## Installation
 
-1. Develop the script in your desktop PC or cloud server.
-2. Download this package and save.
-3. Fill your personal information in `main.py`.
-4. Refer to the following workflow.
-5. Keep this program running 24 hours a day & 7 days a week.
+1. Fill your personal information in `main.py`.
 
-![](https://github.com/cloudy-sfu/SLU-Daily-Report/blob/main/doc/workflow.svg)
+2. Run command:
 
-Commands:
-1. Run `main.py` with python >= 3.7.
-2. `apt install screen`
-3. `yum -y install screen`
-4. (1) Tested pass for python >= 3.7.
 ```bash
-screen
-pip3 install -r requirements
-cd [INSTALLED FOLDER]
-python3 main.py
+cd ${installed_path}
+pip install -r requirements
 ```
-(2) Press `Ctrl` + `A`, then press `D`.
+
+3. Create a sub-process by `screen` or a similar tool, and run our script 24 hours a day & 7 days a week.
+
+```bash
+python main.py
+```
+
+## Usage
 
 Guidance for filling personal information:
 
@@ -47,3 +43,4 @@ Guidance for filling personal information:
 | school_name     | string    | name of your school<br />Supported: 统计与数学学院, 信息管理学院, 财税与公共管理学院 |
 | class_name      | string    | name of your class                                           |
 | name            | string    | your name                                                    |
+
