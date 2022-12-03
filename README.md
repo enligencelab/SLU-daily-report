@@ -1,4 +1,4 @@
-# Autoscript Daily Report
+# SLU Daily Report
  上海立信会计金融学院COVID-19流行病防治每日一报的自动化脚本
 
 ![](https://img.shields.io/badge/tests-2021.1.18%20%E2%9C%94-green)
