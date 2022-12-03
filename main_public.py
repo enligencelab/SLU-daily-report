@@ -16,6 +16,8 @@ while 1:
         for report in my_reports:
             result = report.run()
             print(report.name, result)
+        sleep(3600*23)  # 23 hours
+    elif datetime.now().hour == 7:
+        sleep(3600)  # 1 hours
     else:
-        print("Not in the reporting time period: ", datetime.now())
-    sleep(3600)  # 1 hours (unit: seconds)
+        sleep(3600)  # 1 hours
